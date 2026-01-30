@@ -1,6 +1,6 @@
 {
   "name": "navigation",
-  "version": "14.2.0",
+  "version": "1.0.0",
   "description": "My dazzling Nuxt.js project",
   "author": "geekape",
   "private": true,
@@ -35,7 +35,7 @@
     "vuex": "^3.6.2"
   },
   "devDependencies": {
-    "@nuxtjs/proxy": "^2.0.1",
+    "@nuxtjs/proxy": "^14.2.0",
     "chalk": "^4.1.0",
     "css-loader": "^3.6.0",
     "node-sass": "^4.14.1",
