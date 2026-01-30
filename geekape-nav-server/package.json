@@ -46,7 +46,7 @@
     "typescript": "^3.0.0"
   },
   "engines": {
-    "node": ">=8.9.0"
+    "node": ">=14.2.0"
   },
   "ci": {
     "version": "8"
