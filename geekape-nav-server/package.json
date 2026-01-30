@@ -46,7 +46,7 @@
     "typescript": "^3.0.0"
   },
   "engines": {
-    "node": ">=14.3.0-canary.76"
+    "node": ">=15.3.6"
   },
   "ci": {
     "version": "8"
