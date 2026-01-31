@@ -97,12 +97,20 @@ module.exports = {
     styleResources: {
       scss: './static/styles/var.scss',
     },
-    /*
-     ** You can extend webpack config here
-     */
-    extend(config, ctx) {},
+    // --- 强制添加以下配置 ---
+    terser: false, // 禁用 Terser 压缩
+    optimization: {
+      minimize: false // 彻底关掉 Webpack 的最小化优化
+    },
+    // -----------------------
+    extend(config, ctx) {
+       // 如果仍然报错，可以在这里强制关闭混淆
+       if (ctx.isDev || ctx.isClient) {
+          config.optimization.minimize = false;
+       }
+    },
     vendor: ["axios"]
-  },
+},
 
   /*
    ** 服务器端中间件--针对首页做缓存
